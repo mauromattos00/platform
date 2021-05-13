@@ -110,7 +110,7 @@
     "@nrwl/angular": "12.3.6",
     "core-js": "^2.5.4",
     "opencollective": "^1.0.3",
-    "rxjs": "~6.5.5",
+    "rxjs": "~7.0.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
