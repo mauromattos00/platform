@@ -138,7 +138,7 @@ export function union<
 
 function defineType<T extends string>(
   type: T,
-  creator: Creator
+  creator: Creator & any
 ): ActionCreator<T> {
   return Object.defineProperty(creator, 'type', {
     value: type,
