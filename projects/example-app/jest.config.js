@@ -2,11 +2,6 @@ module.exports = {
   displayName: 'Example App',
   preset: '../../jest.preset.js',
   coverageDirectory: '../../coverage/apps/example-app',
-  snapshotSerializers: [
-    'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
-    'jest-preset-angular/build/AngularSnapshotSerializer.js',
-    'jest-preset-angular/build/HTMLCommentSerializer.js',
-  ],
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {

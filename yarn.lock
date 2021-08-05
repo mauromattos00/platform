@@ -10017,7 +10017,14 @@ jasmine-core@~3.5.0:
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.5.0.tgz#132c23e645af96d85c8bca13c8758b18429fc1e4"
   integrity sha512-nCeAiw37MIMA9w9IXso7bRaLl+c/ef3wnxsoSAlYrzS+Ot0zTG6nU8G/cIfGkqpkjX2wNaIW9RFG0TwIFnG6bA==
 
-jasmine-marbles@0.8.3, jasmine-marbles@~0.8.3:
+jasmine-marbles@0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/jasmine-marbles/-/jasmine-marbles-0.9.0.tgz#753f60706470ef8714c35b07937a2368be31dab9"
+  integrity sha512-VrkJyGwIUmTzJnWxWQyVigOIJ6dn4nHRewNaCMiLn0E/fBpombRdtlL3xZ/fnJZp0SAU4nJsVThLWTb3MaiVAw==
+  dependencies:
+    lodash "^4.17.20"
+
+jasmine-marbles@~0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/jasmine-marbles/-/jasmine-marbles-0.8.3.tgz#a27253d1d52dfe49d8f145aba63f0bf18147b4ff"
   integrity sha512-aaf7ObOC9X1jZ8VyIG49+vOTycRqIWT5Jt3vHHbECE9tN7U05mnpxi20thth02HzasOv/Fmqf+uGhcLE/f8NYg==
