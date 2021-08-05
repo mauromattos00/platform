@@ -8,4 +8,5 @@ module.exports = {
     'jest-preset-angular/build/HTMLCommentSerializer.js',
   ],
   globals: { 'ts-jest': { tsconfig: '<rootDir>/tsconfig.spec.json' } },
+  testEnvironment: 'node',
 };
