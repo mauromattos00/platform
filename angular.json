@@ -38,12 +38,10 @@
             "parallel": false,
             "commands": [
               {
-                "command": "ng run component:build-package",
-                "forwardAllArgs": false
+                "command": "ng run component:build-package"
               },
               {
-                "command": "yarn tsc -p modules/component/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/component/tsconfig.schematics.json"
               }
             ],
             "outputPath": ["dist/modules/component"]
@@ -88,12 +86,10 @@
             "parallel": false,
             "commands": [
               {
-                "command": "ng run component-store:build-package",
-                "forwardAllArgs": false
+                "command": "ng run component-store:build-package"
               },
               {
-                "command": "yarn tsc -p modules/component-store/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/component-store/tsconfig.schematics.json"
               }
             ],
             "outputPath": ["dist/modules/component-store"]
@@ -138,12 +134,10 @@
             "parallel": false,
             "commands": [
               {
-                "command": "ng run data:build-package",
-                "forwardAllArgs": false
+                "command": "ng run data:build-package"
               },
               {
-                "command": "yarn tsc -p modules/data/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/data/tsconfig.schematics.json"
               }
             ],
             "outputPath": ["dist/modules/data"]
@@ -278,24 +272,19 @@
             "parallel": false,
             "commands": [
               {
-                "command": "yarn setup",
-                "forwardAllArgs": false
+                "command": "yarn setup"
               },
               {
-                "command": "npm rebuild node-sass",
-                "forwardAllArgs": false
+                "command": "npm rebuild node-sass"
               },
               {
-                "command": "yarn build-for next --progress false && yarn copy-404-page",
-                "forwardAllArgs": false
+                "command": "yarn build-for next --progress false && yarn copy-404-page"
               },
               {
-                "command": "yarn --cwd ../../ cpy projects/ngrx.io/src/extra-files/next/*.* projects/ngrx.io/dist/ngrx.io/",
-                "forwardAllArgs": false
+                "command": "yarn --cwd ../../ cpy projects/ngrx.io/src/extra-files/next/*.* projects/ngrx.io/dist/ngrx.io/"
               },
               {
-                "command": "yarn --cwd ../../ cpy projects/ngrx.io/src/extra-files/next/CNAME projects/ngrx.io/dist/ngrx.io/",
-                "forwardAllArgs": false
+                "command": "yarn --cwd ../../ cpy projects/ngrx.io/src/extra-files/next/CNAME projects/ngrx.io/dist/ngrx.io/"
               }
             ],
             "outputPath": ["projects/ngrx.io/dist/ngrx.io"]
@@ -309,12 +298,10 @@
             "parallel": false,
             "commands": [
               {
-                "command": "yarn --ignore-engines --frozen-lockfile --non-interactive",
-                "forwardAllArgs": false
+                "command": "yarn --ignore-engines --frozen-lockfile --non-interactive"
               },
               {
-                "command": "yarn test --watch=false",
-                "forwardAllArgs": false
+                "command": "yarn test --watch=false"
               }
             ]
           }
@@ -349,24 +336,19 @@
             "parallel": false,
             "commands": [
               {
-                "command": "ng run effects:build-package",
-                "forwardAllArgs": false
+                "command": "ng run effects:build-package"
               },
               {
-                "command": "yarn tsc -p modules/effects/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/effects/tsconfig.schematics.json"
               },
               {
-                "command": "yarn rimraf node_modules/@ngrx/effects",
-                "forwardAllArgs": false
+                "command": "yarn rimraf node_modules/@ngrx/effects"
               },
               {
-                "command": "yarn mkdirp node_modules/@ngrx/effects",
-                "forwardAllArgs": false
+                "command": "yarn mkdirp node_modules/@ngrx/effects"
               },
               {
-                "command": "ncp dist/modules/effects node_modules/@ngrx/effects",
-                "forwardAllArgs": false
+                "command": "ncp dist/modules/effects node_modules/@ngrx/effects"
               }
             ],
             "outputPath": ["dist/modules/effects", "node_modules/@ngrx/effects"]
@@ -411,24 +393,19 @@
             "parallel": false,
             "commands": [
               {
-                "command": "ng run entity:build-package",
-                "forwardAllArgs": false
+                "command": "ng run entity:build-package"
               },
               {
-                "command": "yarn tsc -p modules/entity/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/entity/tsconfig.schematics.json"
               },
               {
-                "command": "yarn rimraf node_modules/@ngrx/entity",
-                "forwardAllArgs": false
+                "command": "yarn rimraf node_modules/@ngrx/entity"
               },
               {
-                "command": "yarn mkdirp node_modules/@ngrx/entity",
-                "forwardAllArgs": false
+                "command": "yarn mkdirp node_modules/@ngrx/entity"
               },
               {
-                "command": "ncp dist/modules/entity node_modules/@ngrx/entity",
-                "forwardAllArgs": false
+                "command": "ncp dist/modules/entity node_modules/@ngrx/entity"
               }
             ],
             "outputPath": ["dist/modules/entity", "node_modules/@ngrx/entity"]
@@ -583,12 +560,10 @@
             "parallel": false,
             "commands": [
               {
-                "command": "ng run router-store:build-package",
-                "forwardAllArgs": false
+                "command": "ng run router-store:build-package"
               },
               {
-                "command": "yarn tsc -p modules/router-store/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/router-store/tsconfig.schematics.json"
               }
             ],
             "outputPath": ["dist/modules/router-store"]
@@ -668,40 +643,31 @@
             "parallel": false,
             "commands": [
               {
-                "command": "nx build-package schematics",
-                "forwardAllArgs": false
+                "command": "nx build-package schematics"
               },
               {
-                "command": "yarn tsc -p modules/schematics/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/schematics/tsconfig.schematics.json"
               },
               {
-                "command": "cpy modules/schematics/collection.json dist/modules/schematics",
-                "forwardAllArgs": false
+                "command": "cpy modules/schematics/collection.json dist/modules/schematics"
               },
               {
-                "command": "cpy modules/schematics/migrations/migration.json dist/modules/schematics/migrations",
-                "forwardAllArgs": false
+                "command": "cpy modules/schematics/migrations/migration.json dist/modules/schematics/migrations"
               },
               {
-                "command": "cpy modules/schematics/src/**/files/**/*.* dist/ --parents",
-                "forwardAllArgs": false
+                "command": "cpy modules/schematics/src/**/files/**/*.* dist/ --parents"
               },
               {
-                "command": "cpy modules/schematics/src/**/creator-files/**/*.* dist/ --parents",
-                "forwardAllArgs": false
+                "command": "cpy modules/schematics/src/**/creator-files/**/*.* dist/ --parents"
               },
               {
-                "command": "cpy modules/schematics/src/**/common-files/**/*.* dist/ --parents",
-                "forwardAllArgs": false
+                "command": "cpy modules/schematics/src/**/common-files/**/*.* dist/ --parents"
               },
               {
-                "command": "cpy modules/schematics/src/**/integration-files/**/*.* dist/ --parents",
-                "forwardAllArgs": false
+                "command": "cpy modules/schematics/src/**/integration-files/**/*.* dist/ --parents"
               },
               {
-                "command": "cpy modules/schematics/src/**/schema.json dist/ --parents",
-                "forwardAllArgs": false
+                "command": "cpy modules/schematics/src/**/schema.json dist/ --parents"
               }
             ],
             "outputPath": ["dist/modules/schematics"]
@@ -754,24 +720,19 @@
             "parallel": false,
             "commands": [
               {
-                "command": "ng run store:build-package",
-                "forwardAllArgs": false
+                "command": "ng run store:build-package"
               },
               {
-                "command": "yarn tsc -p modules/store/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/store/tsconfig.schematics.json"
               },
               {
-                "command": "yarn rimraf node_modules/@ngrx/store",
-                "forwardAllArgs": false
+                "command": "yarn rimraf node_modules/@ngrx/store"
               },
               {
-                "command": "yarn mkdirp node_modules/@ngrx/store",
-                "forwardAllArgs": false
+                "command": "yarn mkdirp node_modules/@ngrx/store"
               },
               {
-                "command": "ncp dist/modules/store node_modules/@ngrx/store",
-                "forwardAllArgs": false
+                "command": "ncp dist/modules/store node_modules/@ngrx/store"
               }
             ],
             "outputPath": ["dist/modules/store", "node_modules/@ngrx/store"]
@@ -816,12 +777,10 @@
             "parallel": false,
             "commands": [
               {
-                "command": "ng run store-devtools:build-package",
-                "forwardAllArgs": false
+                "command": "ng run store-devtools:build-package"
               },
               {
-                "command": "yarn tsc -p modules/store-devtools/tsconfig.schematics.json",
-                "forwardAllArgs": false
+                "command": "yarn tsc -p modules/store-devtools/tsconfig.schematics.json"
               }
             ],
             "outputPath": ["dist/modules/store-devtools"]
